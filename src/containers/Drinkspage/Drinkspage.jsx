@@ -1,12 +1,20 @@
-import Header from "../../components/Header/Header.jsx";
 
+import Header from "../../components/Header/Header.jsx"
+import TopTabs from "../../components/TopTabs/TopTabls.jsx";
 const Drinkspage=()=>{
     return(
         <>
-            <Header/>
+        <Header/>
+        <div className="drinks-page">
+            <TopTabs/>
+            <div className="drinks-content">
 
-            <h1>Drinkpage</h1>
+            </div>
+        </div>
+        
+
+        
         </>
-    )
-}
+    );
+};
 export default Drinkspage;
