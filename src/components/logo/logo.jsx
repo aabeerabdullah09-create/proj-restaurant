@@ -4,7 +4,7 @@ import logo from "../../assets/vanilla.png";
 export default function ImageAvatars() {
     return (
         <Stack direction="row" spacing={2}>
-            <Avatar alt="Vanilla logo" src={logo} sx={{ width: 40, height: 40 }}/>
+            <Avatar alt="Vanilla logo" src={logo} sx={{ width: 50, height: 50 }}/>
         </Stack>
     );
 }

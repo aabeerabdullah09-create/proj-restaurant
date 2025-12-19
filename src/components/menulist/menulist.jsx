@@ -1,6 +1,5 @@
-import * as React from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
@@ -9,51 +8,24 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import FormatListBulletedIcon from '@mui/icons-material/FormatListBulleted';
 
-export default function TemporaryDrawer() {
-    const [open, setOpen] = React.useState(false);
+export default function Menulist() {
+    const [open, setOpen] = useState(false);
     const navigate = useNavigate();
 
-    const toggleDrawer = (newOpen) => () => {
-        setOpen(newOpen);
+    const toggleDrawer = (value) => () => {
+        setOpen(value);
     };
 
-    const DrawerList = (
-        <Box role="presentation" sx={{ width: '100%' }}>
-            <List>
-                <ListItem disablePadding>
-                    <ListItemButton onClick={() => navigate('/')}>
-                        <ListItemText primary="Home" />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton onClick={() => navigate('/Foodpage')}>
-                        <ListItemText primary="Food" />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton onClick={() => navigate('/Drinkspage')}>
-                        <ListItemText primary="Drinks" />
-                    </ListItemButton>
-                </ListItem>
-                <ListItem disablePadding>
-                    <ListItemButton onClick={() => navigate('/Dessertpage')}>
-                        <ListItemText primary="Dessert" />
-                    </ListItemButton>
-                </ListItem>
-            </List>
-        </Box>
-    );
-
     return (
-        <div>
+        <>
             <IconButton
                 onClick={toggleDrawer(true)}
                 sx={{
                     position: 'fixed',
                     top: 9,
                     left: 16,
-                    bgcolor: 'transparent',
                     color: 'white',
+                    zIndex: 30,
                 }}
             >
                 <FormatListBulletedIcon fontSize="medium" />
@@ -65,13 +37,29 @@ export default function TemporaryDrawer() {
                 PaperProps={{
                     sx: {
                         width: 300,
-                        bgcolor: 'white',
-                        color: 'black',
+                        bgcolor: 'black',
+                        color: 'white',
                     },
                 }}
             >
-                {DrawerList}
+                <List>
+                    {[
+                        { text: 'Home', path: '/' },
+                        { text: 'Food', path: '/Foodpage' },
+                        { text: 'Drinks', path: '/Drinkspage' },
+                        { text: 'Dessert', path: '/Dessertpage' },
+                    ].map((item) => (
+                        <ListItem key={item.text} disablePadding>
+                            <ListItemButton onClick={() => navigate(item.path)}>
+                                <ListItemText
+                                    primary={item.text}
+                                    sx={{ color: 'white' }}
+                                />
+                            </ListItemButton>
+                        </ListItem>
+                    ))}
+                </List>
             </Drawer>
-        </div>
+        </>
     );
 }
