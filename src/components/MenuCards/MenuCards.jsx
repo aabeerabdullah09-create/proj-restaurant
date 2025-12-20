@@ -13,23 +13,26 @@ export default function MenuCards() {
     }, []);
 
     return (
-        <div className="p-6 bg-black-100">
+        <div className="p-2 bg-black-100">
             <h1 className="text-3xl mb-6 text-center">NEW</h1>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                 {menu.map((item, index) => (
                     <div
                         key={index}
-                        className="bg-white rounded-lg shadow-md p-3 flex flex-col items-center relative hover:scale-105 transition-transform">
+                        className="bg-white rounded-lg shadow-md p-1 flex flex-col items-center relative hover:scale-105 transition-transform">
                         <div className="absolute top-2 left-2 w-8 h-8 bg-red-600 rounded-full flex items-center justify-center z-10">
                             <span className="text-white text-xs font-bold">NEW</span>
                         </div>
-                        <img
-                            src={item.image}
-                            alt={item.name}
-                            className="w-70 h-70 object-contain mb-6"
-                        />
+                        <div className="w-full h-90 flex items-center justify-center overflow-hidden">
+                            <img
+                                src={item.image}
+                                alt={item.name}
+                                className="w-full h-full object-contain hover:scale-110 transition-transform duration-300"
+                            />
+                        </div>
+
                         <h2 className="text-xl font-semibold mb-2 text-black">{item.name}</h2>
-                        <p className="text-gray-700 font-medium">{item.description}</p>
+                        <p className="text-gray-700 text-10">{item.description}</p>
                         <p className="text-gray-700 text-2">{item.price}</p>
                     </div>
 
