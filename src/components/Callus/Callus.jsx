@@ -2,8 +2,8 @@ import PhoneInTalkIcon from '@mui/icons-material/PhoneInTalk';
 
 const Callus = () => {
     return (
-        <div className="fixed top-3 right-3 text-[13px]">
-            <PhoneInTalkIcon className="text-[18px]"/>
+        <div className=" top-3 left-3 text-[13px]">
+            <PhoneInTalkIcon style={{ fontSize: "20px" }}/>
             +02-296-117-989
         </div>
     );

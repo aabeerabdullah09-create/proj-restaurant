@@ -1,5 +1,11 @@
 import { NavLink } from "react-router-dom";
 export default function TopTabs() {
+    const scrollToMenu = () => {
+        const section = document.getElementById("menu-section");
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    };
   return (
     <div className="flex justify-center gap-7 py-3">
         <NavLink
@@ -44,8 +50,9 @@ export default function TopTabs() {
       >
         Dessert
       </NavLink>
-
-
-    </div>
+        <NavLink to="/Home" onClick={scrollToMenu} className="text-gray-300 text-sm font-medium hover:text-white">
+            NEW
+        </NavLink>
+        </div>
   );
 }
