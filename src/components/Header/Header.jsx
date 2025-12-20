@@ -1,21 +1,18 @@
-import ImageAvatars from "../logo/logo.jsx";
-import Menulist from "../menulist/menulist.jsx";
-import Divider from '@mui/material/Divider';
-
+import Location from "../Location/Location.jsx";
+import Callus from "../Callus/Callus.jsx";
+import OurSocial from "../OurSocial/OurSocial.jsx";
 const Header = () => {
-    return (
+    return(
         <>
-        <div className="font-bold text-6xl flex justify-center">
-            <h1>VANILLA</h1>
-            <ImageAvatars/>
-        </div>
         <div>
-              <Menulist/>
+          <Location/>
         </div>
-            <Divider sx={{ my: 0.5, borderColor: 'White' }}/>
-
+          <div>
+              <Callus/>
+              <OurSocial/>
+          </div>
+            <hr className="my-1 border-white/20" />
         </>
     )
 }
-
 export default Header;

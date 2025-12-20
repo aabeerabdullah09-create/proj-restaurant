@@ -5,20 +5,12 @@ const Buttontomenu = () => {
     const navigate = useNavigate();
 
     return (
-        <Box
-            sx={{
-                backgroundColor: "rgba(255, 255, 255, 0.15)", // مربع شفاف
-                padding: "16px 24px",
-                borderRadius: "8px",
-                display: "inline-block",
-            }}
-        >
+        <Box className="inline-block bg-white/15 px-[10px] py-[10px] rounded-[20px]">
             <Button
                 sx={{ color: "white" }}
                 className="flex justify-center"
-                onClick={() => navigate("/Foodpage")}
-            >
-                enter to go to the menu
+                onClick={() => navigate("/Foodpage")}>
+              VIEW FULL MENU
             </Button>
         </Box>
     );
