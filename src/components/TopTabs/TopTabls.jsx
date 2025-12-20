@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-export default function TopTabs() {
+const TopTabs=()=> {
     const scrollToMenu = () => {
         const section = document.getElementById("menu-section");
         if (section) {
@@ -56,3 +56,4 @@ export default function TopTabs() {
         </div>
   );
 }
+export default TopTabs;

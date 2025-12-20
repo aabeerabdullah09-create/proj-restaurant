@@ -2,9 +2,9 @@ import Button from '@mui/material/Button';
 import Avatar from '@mui/material/Avatar';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import tikk from "../../assets/tiii.png";
+import tikk from "../../../assets/tiii.png";
 
-export default function OurSocial() {
+const OurSocial=()=> {
     return (
         <div className="top-2 left-35 flex gap-1 z-50">
             <Button
@@ -40,3 +40,4 @@ export default function OurSocial() {
         </div>
     );
 }
+export default OurSocial;

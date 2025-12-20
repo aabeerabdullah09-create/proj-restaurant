@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function MenuCards() {
+const MenuCards=()=> {
     const [menu, setMenu] = useState([]);
 
     useEffect(() => {
@@ -41,3 +41,4 @@ export default function MenuCards() {
         </div>
     );
 }
+export default MenuCards;

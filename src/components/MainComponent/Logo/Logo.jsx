@@ -1,7 +1,7 @@
 import Stack from '@mui/material/Stack';
-import logo from "../../assets/lojpeg.jpeg";
+import logo from "../../../assets/lojpeg.jpeg";
 
-export default function Logoo() {
+const Logoo=()=> {
     return (
         <div style={{ marginTop: '-35px' }}>
             <Stack direction="row" spacing={1} alignItems="center">
@@ -11,3 +11,4 @@ export default function Logoo() {
         </div>
     );
 }
+export default Logoo;

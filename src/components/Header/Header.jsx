@@ -1,7 +1,7 @@
-import Location from "../Location/Location.jsx";
-import Callus from "../Callus/Callus.jsx";
-import OurSocial from "../OurSocial/OurSocial.jsx";
-import Email from "../Email/Email.jsx"
+import Location from "../MainComponent/Location/Location.jsx";
+import Callus from "../MainComponent/Callus/Callus.jsx";
+import OurSocial from "../MainComponent/OurSocial/OurSocial.jsx";
+import Email from "../MainComponent/Email/Email.jsx"
 const Header = () => {
     return (
         <>

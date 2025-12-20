@@ -1,4 +1,4 @@
-import bgimage from "../../assets/vannI.png";
+import bgimage from "../../../assets/vannI.png";
 
 const Restphoto = () => {
     return (
