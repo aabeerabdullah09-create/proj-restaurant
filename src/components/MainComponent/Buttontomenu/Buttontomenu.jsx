@@ -6,7 +6,7 @@ const Buttontomenu = () => {
     return (
         <Box className="inline-block bg-white/15 px-[10px] py-[10px] rounded-[20px]">
             <Button sx={{ color: "white" }} className="flex justify-center"
-                onClick={() => navigate("/Foodpage/breakfast")}>
+                onClick={() => navigate("/Foodpage/155b70ff-c170-4f9c-a79f-ba722045b3cf")}>
               VIEW FULL MENU
             </Button>
         </Box>
