@@ -14,7 +14,7 @@ const Mainpage = () =>{
            </div>
            <TopTabs/>
            <div>
-               <Logoo/>
+               <Logoo />
            </div>
 
            <div className="absolute bottom-60 text-3xl font-serif left-1/2 transform -translate-x-1/2">- WELCOME TO OUR RESTAURENT -</div>

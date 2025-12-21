@@ -1,6 +1,5 @@
 import Stack from '@mui/material/Stack';
 import logo from "../../../assets/lojpeg.jpeg";
-
 const Logoo=()=> {
     return (
         <div style={{ marginTop: '-35px' }}>

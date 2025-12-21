@@ -3,11 +3,9 @@ import {IconButton} from "@mui/material";
 import MailIcon from '@mui/icons-material/Mail';
 const Email = () => {
     const [openEmail, setOpenEmail] = useState(false);
-
     if (openEmail) {
         window.open('mailto:info@vanilla.ps', '_blank');
         setOpenEmail(false);}
-
     return (
         <IconButton onClick={() => setOpenEmail(true)} sx={{ color: "white" }}>
             <MailIcon style={{ fontSize: "16px" }}/>

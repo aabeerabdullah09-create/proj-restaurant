@@ -23,7 +23,7 @@ function App() {
           <Route path="/Drinkspage" element={<Drinkspage/>}/>
           <Route path="/Dessertpage" element={<Dessertpage/>}/>
           <Route path="*" element={<NotFound/>}/>
-          <Route path="/Foodpage/:id" element={<Foodpage/>}/>
+          <Route path="/Foodpage/:id" element={<Foodpage/>} />
       </Routes>
           <ThemeProvider theme={darkTheme}>
               <CssBaseline />
