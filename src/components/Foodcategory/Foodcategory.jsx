@@ -31,7 +31,6 @@ const FoodCategory = () => {
             <h2 className="text-3xl font-bold mb-8 text-center">
                 {category.title}
             </h2>
-
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                 {category.items.map(item => (
                     <FoodCard key={item.id} item={item} />
