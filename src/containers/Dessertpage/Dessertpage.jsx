@@ -6,10 +6,15 @@ const Dessertpage=()=>{
         <>
             <Header/>
             <div className="drinks-page">
-                <TopTabs/>
-                <div className="drinks-content">
+                <div
+                    className="relative mt-10 md:mt-5 z-20">
+                    <TopTabs />
                 </div>
-                <Logoo/>
+                   <div className="drinks-content">
+                </div>
+                <div className="absolute top-20 left-4 z-30">
+                    <Logoo  />
+                </div>
             </div>
 
 

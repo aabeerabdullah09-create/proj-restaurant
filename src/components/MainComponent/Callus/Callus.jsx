@@ -4,7 +4,7 @@ const Callus = () => {
     return (
         <div className=" top-3 left-3 text-[13px]">
             <PhoneInTalkIcon style={{ fontSize: "20px" }}/>
-            +02-296-117-989
+            +02-296-117
         </div>
     );
 };
