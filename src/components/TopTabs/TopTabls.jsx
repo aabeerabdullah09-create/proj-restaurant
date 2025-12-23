@@ -53,18 +53,7 @@ const TopTabs=()=> {
         <NavLink to="/Home" onClick={scrollToMenu} className="text-gray-300 text-sm font-medium hover:text-white">
             NEW
         </NavLink>
-
-        <NavLink
-        to="/VanillaStoryPage"
-        className={({ isActive }) =>
-          isActive
-            ? "text-white text-sm font-medium border-b-2 border-white pb-1"
-            : "text-gray-300 text-sm"
-        }
-      >
-        Our Story
-      </NavLink>
         </div>
-        );
-      }
+  );
+}
 export default TopTabs;
