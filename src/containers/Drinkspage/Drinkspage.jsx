@@ -16,7 +16,8 @@ const Drinkspage=()=>{
             </div>
             <div className="absolute top-20 left-4 z-30">
                 <Logoo  />
-            </div>        </div>
+            </div>
+        </div>
         
 
         

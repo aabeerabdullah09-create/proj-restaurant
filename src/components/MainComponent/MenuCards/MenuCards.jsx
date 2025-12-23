@@ -22,9 +22,7 @@ const MenuCards = () => {
             <h2 className="text-2xl font-bold mb-6 text-center">NEW</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {menu?.map((item, index) => (
-                    <div
-                        key={index}
-                        className=" relative border rounded-lg p-4 shadow bg-white transition-all duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 hover:shadow-xl
+                    <div key={index} className=" relative border rounded-lg p-4 shadow bg-white transition-all duration-300 ease-in-out hover:-translate-y-2 hover:scale-105 hover:shadow-xl
                           cursor-pointer">
                       <span className="absolute top-3 left-3 bg-red-600 text-white text-xs px-2 py-1 rounded-full">
                         NEW
@@ -40,7 +38,6 @@ const MenuCards = () => {
                             {item.price}
                         </p>
                     </div>
-
                 ))}
             </div>
         </section>
