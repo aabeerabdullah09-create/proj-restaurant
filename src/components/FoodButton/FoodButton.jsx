@@ -6,20 +6,36 @@ const FoodButton = () => {
         }`;
     return (
         <nav className="flex justify-center mt-0 mb-6 gap-6">
-            <NavLink to="/Foodpage/155b70ff-c170-4f9c-a79f-ba722045b3cf" className={linkClasses}>
+            <NavLink to="/Foodpage/333cc771-8218-4d47-b72e-3a6aa2bfb51e" className={linkClasses}>
                 Breakfast
             </NavLink>
-            <NavLink to="/Foodpage/1be148d3-9dde-4055-b62e-908976e97b31" className={linkClasses}>
-                Mankosha
+            <NavLink to="/Foodpage/c3be4e0a-fccf-45b4-abba-9ce2185bcf22" className={linkClasses}>
+                Salads
             </NavLink>
-            <NavLink to="/Foodpage/dbf31718-df8c-4656-ab1f-c2af0c5fba3b" className={linkClasses}>
-                Healthy Meal
+            <NavLink to="/Foodpage/b5578a43-f4ac-4de4-b623-83da19ce08ca" className={linkClasses}>
+                Burger
             </NavLink>
-            <NavLink to="/Foodpage/fc9eb90d-1e17-42d8-848e-4b3824fd4be3" className={linkClasses}>
+            <NavLink to="/Foodpage/0d3bd197-3f23-42e3-97ec-1ca2a4cdcb35" className={linkClasses}>
                 Pasta
+            </NavLink>
+            <NavLink to="/Foodpage/7cf629d5-b7a2-4424-ad15-f283e36b2668" className={linkClasses}>
+                Pizza
+            </NavLink>
+            <NavLink to="/Foodpage/9a573772-5c20-4a4a-9100-162e3bfed9cc" className={linkClasses}>              
+                  International
+            </NavLink>
+            <NavLink to="/Foodpage/6eb7a29e-aae3-4649-9349-83ea90cc8e7c" className={linkClasses}>              
+                  Meats
             </NavLink>
         </nav>
     );
 };
 
+<<<<<<< HEAD
 export default FoodButton;
+=======
+export default FoodButton;
+
+
+
+>>>>>>> a7b91e07ef1e05aa8a6afc7e92c0696113dd43eb

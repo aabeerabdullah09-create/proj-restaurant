@@ -7,9 +7,13 @@ import Drinkspage from "./containers/Drinkspage/Drinkspage.jsx";
 import NotFound from "./containers/NotFound/NotFound.jsx";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+<<<<<<< HEAD
 import ScrollToTop from "./components/ScrollToTop.jsx";
 
 
+=======
+import VanillaStoryPage from "./containers/VanillaStoryPage/VanillaStoryPage.jsx";
+>>>>>>> a7b91e07ef1e05aa8a6afc7e92c0696113dd43eb
 const darkTheme = createTheme({
   palette: { mode: "dark" },
 });
@@ -21,6 +25,7 @@ function App() {
       <ScrollToTop />
       <main></main>
       <Routes>
+<<<<<<< HEAD
         <Route path="/" element={<Mainpage />} />
         <Route path="/Mainpage" element={<Mainpage />} />
         <Route path="/Home" element={<Mainpage />} />
@@ -34,6 +39,17 @@ function App() {
         <Route path="/Dessertpage/:id" element={<Dessertpage />} />
 
         <Route path="*" element={<NotFound />} />
+=======
+          <Route path="/" element={<Mainpage/>}/>
+          <Route path="/Mainpage" element={<Mainpage/>}/>
+          <Route path="/Home" element={<Mainpage/>}/>
+          <Route path="/Foodpage" element={<Foodpage/>}/>
+          <Route path="/Drinkspage" element={<Drinkspage/>}/>
+          <Route path="/Dessertpage" element={<Dessertpage/>}/>
+          <Route path="*" element={<NotFound/>}/>
+          <Route path="/Foodpage/:id" element={<Foodpage/>} />
+          <Route path="/VanillaStoryPage" element={<VanillaStoryPage/>} />
+>>>>>>> a7b91e07ef1e05aa8a6afc7e92c0696113dd43eb
       </Routes>
     </ThemeProvider >
   );
