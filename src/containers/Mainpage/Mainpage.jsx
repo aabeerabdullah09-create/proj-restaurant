@@ -7,21 +7,29 @@ import MenuCards from "../../components/MainComponent/MenuCards/MenuCards.jsx";
 const Mainpage = () =>{
     return(
         <>
-       <div className="relative min-h-screen">
+       <div className="relative h-screen">
            <Restphoto/>
            <div>
                <Header/>
            </div>
-           <TopTabs/>
-           <div>
-               <Logoo />
+           <div className="absolute top-20 left-4 z-30">
+               <Logoo  />
            </div>
 
-           <div className="absolute bottom-60 text-3xl font-serif left-1/2 transform -translate-x-1/2">- WELCOME TO OUR RESTAURENT -</div>
-           <div className="absolute bottom-45 left-1/2 transform -translate-x-1/2">
-               <Buttontomenu />
+           <div
+               className="relative mt-10 md:mt-5 z-20">
+               <TopTabs />
            </div>
-        </div>
+           <div className="absolute top-110 md:top-80 left-1/2 -translate-x-1/2 text-2xl md:text-3xl font-serif
+                   text-white z-20 text-center">
+                   - WELCOME TO OUR RESTAURANT -
+           </div>
+           <div>
+           <Buttontomenu />
+           </div>
+
+       </div>
+
             <div id="menu-section">
                 <MenuCards />
             </div>
