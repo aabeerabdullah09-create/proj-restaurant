@@ -30,12 +30,4 @@ const FoodButton = () => {
         </nav>
     );
 };
-
-<<<<<<< HEAD
 export default FoodButton;
-=======
-export default FoodButton;
-
-
-
->>>>>>> a7b91e07ef1e05aa8a6afc7e92c0696113dd43eb
