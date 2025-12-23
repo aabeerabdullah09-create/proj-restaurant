@@ -1,4 +1,5 @@
-import {Routes,Route}from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+
 import Mainpage from "./containers/Mainpage/Mainpage.jsx";
 import Foodpage from "./containers/Foodpage/Foodpage.jsx";
 import Dessertpage from "./containers/Dessertpage/Dessertpage.jsx";
@@ -6,17 +7,39 @@ import Drinkspage from "./containers/Drinkspage/Drinkspage.jsx";
 import NotFound from "./containers/NotFound/NotFound.jsx";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+<<<<<<< HEAD
+import ScrollToTop from "./components/ScrollToTop.jsx";
+
+
+=======
 import VanillaStoryPage from "./containers/VanillaStoryPage/VanillaStoryPage.jsx";
+>>>>>>> a7b91e07ef1e05aa8a6afc7e92c0696113dd43eb
 const darkTheme = createTheme({
-    palette: {
-        mode: 'dark',
-    },
+  palette: { mode: "dark" },
 });
 
 function App() {
   return (
-      <>
+    <ThemeProvider theme={darkTheme}>
+      <CssBaseline />
+      <ScrollToTop />
+      <main></main>
       <Routes>
+<<<<<<< HEAD
+        <Route path="/" element={<Mainpage />} />
+        <Route path="/Mainpage" element={<Mainpage />} />
+        <Route path="/Home" element={<Mainpage />} />
+
+        <Route path="/Foodpage" element={<Foodpage />} />
+        
+        <Route path="/Foodpage/:id" element={<Foodpage />} />
+        <Route path="/Drinkspage" element={<Drinkspage />} />
+
+        <Route path="/Dessertpage" element={<Dessertpage />} />
+        <Route path="/Dessertpage/:id" element={<Dessertpage />} />
+
+        <Route path="*" element={<NotFound />} />
+=======
           <Route path="/" element={<Mainpage/>}/>
           <Route path="/Mainpage" element={<Mainpage/>}/>
           <Route path="/Home" element={<Mainpage/>}/>
@@ -26,13 +49,10 @@ function App() {
           <Route path="*" element={<NotFound/>}/>
           <Route path="/Foodpage/:id" element={<Foodpage/>} />
           <Route path="/VanillaStoryPage" element={<VanillaStoryPage/>} />
+>>>>>>> a7b91e07ef1e05aa8a6afc7e92c0696113dd43eb
       </Routes>
-          <ThemeProvider theme={darkTheme}>
-              <CssBaseline />
-              <main></main>
-          </ThemeProvider>
-      </>
-  )
+    </ThemeProvider >
+  );
 }
 
-export default App
+export default App;

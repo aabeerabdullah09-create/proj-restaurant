@@ -65,6 +65,12 @@ const TopTabs=()=> {
         Our Story
       </NavLink>
         </div>
+<<<<<<< HEAD
+  );
+}
+export default TopTabs;
+=======
         );
       }
 export default TopTabs;
+>>>>>>> a7b91e07ef1e05aa8a6afc7e92c0696113dd43eb

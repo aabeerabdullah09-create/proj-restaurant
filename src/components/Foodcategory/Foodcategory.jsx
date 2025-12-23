@@ -45,7 +45,11 @@ const FoodCategory = () => {
     );
 };
 
+<<<<<<< HEAD
+export default FoodCategory;
+=======
 export default FoodCategory;
 
 
 
+>>>>>>> a7b91e07ef1e05aa8a6afc7e92c0696113dd43eb
