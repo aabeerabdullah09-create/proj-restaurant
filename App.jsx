@@ -7,6 +7,7 @@ import NotFound from "./containers/NotFound/NotFound.jsx";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import VanillaStoryPage from "./containers/VanillaStoryPage/VanillaStoryPage.jsx";
+import Drinkcategory from "./components/Drinkcategory/Drinkcategory.jsx";
 const darkTheme = createTheme({
     palette: {
         mode: 'dark',
@@ -22,11 +23,13 @@ function App() {
           <Route path="/Home" element={<Mainpage/>}/>
           <Route path="/Foodpage" element={<Foodpage/>}/>
           <Route path="/Drinkspage" element={<Drinkspage/>}/>
+          <Route path="/Drinkspage/:id" element={<Drinkcategory/>}/>
           <Route path="/Dessertpage" element={<Dessertpage/>}/>
           <Route path="*" element={<NotFound/>}/>
           <Route path="/Foodpage/:id" element={<Foodpage/>} />
           <Route path="/VanillaStoryPage" element={<VanillaStoryPage/>} />
           <Route path="/Dessertpage/:id" element={<Dessertpage />} />
+          
 
       </Routes>
           <ThemeProvider theme={darkTheme}>
