@@ -29,8 +29,7 @@ const TopTabs=()=> {
         Food
       </NavLink>
 
-      <NavLink
-        to="/Drinkspage/"
+      <NavLink to="/Drinkspage/6513012c-768a-41fc-83f0-d0095c8f14bb"
         className={({ isActive }) =>
           isActive
             ? "text-white text-sm font-medium border-b-2 border-white pb-1"
