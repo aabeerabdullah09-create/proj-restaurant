@@ -4,6 +4,7 @@ import StoryHero from "../../components/StoryHero/StoryHero.jsx";
 import StoryBlocks from "../../components/StoryBlocks/StoryBlocks.jsx";
 import CustomerGrid from "../../components/CustomerGrid/CustomerGrid.jsx";
 import { useNavigate } from "react-router-dom";
+import TopTabs from "../../components/TopTabs/TopTabls.jsx";
 
 
 export default function VanillaStoryPage() {
@@ -38,6 +39,10 @@ export default function VanillaStoryPage() {
   return (
     <>
       <Header />
+        <div
+            className="relative mt-10 md:mt-4 z-20">
+            <TopTabs />
+        </div>
       <StoryHero hero={data.hero} />
       <main className="max-w-4xl mx-auto px-4 py-12">
         <StoryBlocks blocks={data.blocks} />

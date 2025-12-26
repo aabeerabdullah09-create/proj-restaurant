@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-
 const FoodButton = () => {
     const linkClasses = ({ isActive }) =>
         `text-white text-s hover:text-gray-300 transition ${isActive ? "border-b-2 border-white" : ""
