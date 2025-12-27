@@ -27,7 +27,7 @@ const FoodCategory = () => {
     if (!category) return <p>No data</p>;
 
     return (
-        <section className="py-10 px-4">
+        <section className="py-5 px-2">
             <h2 className="text-3xl font-bold mb-8 text-center">
                 {category.title}
             </h2>

@@ -10,7 +10,7 @@ const Buttontomenu = () => {
             <Button sx={{ color: "white" }} className="text-sm md:text-base leading-tight whitespace-normal
              md:whitespace-nowrap px-6 text-center"
                 onClick={() =>
-                    navigate("/Foodpage/155b70ff-c170-4f9c-a79f-ba722045b3cf")}>
+                    navigate("/Foodpage/333cc771-8218-4d47-b72e-3a6aa2bfb51e")}>
                 VIEW FULL MENU
             </Button>
         </Box>
