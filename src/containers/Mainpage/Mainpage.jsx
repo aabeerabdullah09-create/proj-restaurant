@@ -20,7 +20,7 @@ const Mainpage = () =>{
                className="relative mt-10 md:mt-5 z-20">
                <TopTabs />
            </div>
-           <div className="absolute top-110 md:top-80 left-1/2 -translate-x-1/2 text-2xl md:text-3xl font-serif
+           <div className="absolute top-50 md:top-60 left-1/2 -translate-x-1/2 text-2xl md:text-3xl font-serif
                    text-white z-20 text-center">
                    - WELCOME TO OUR RESTAURANT -
            </div>
