@@ -1,12 +1,12 @@
 import {Routes,Route}from "react-router-dom";
-import Mainpage from "./containers/Mainpage/Mainpage.jsx";
-import Foodpage from "./containers/Foodpage/Foodpage.jsx";
-import Dessertpage from "./containers/Dessertpage/Dessertpage.jsx";
-import Drinkspage from "./containers/Drinkspage/Drinkspage.jsx";
-import NotFound from "./containers/NotFound/NotFound.jsx";
+import Mainpage from "./src/Container/Mainpage/Mainpage.jsx";
+import Foodpage from "./src/Container/Foodpage/Foodpage.jsx";
+import Dessertpage from "./src/Container/Dessertpage/Dessertpage.jsx";
+import Drinkspage from "./src/Container/Drinkspage/Drinkspage.jsx";
+import NotFound from "./src/Container/NotFound/NotFound.jsx";
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import VanillaStoryPage from "./containers/VanillaStoryPage/VanillaStoryPage.jsx";
+import VanillaStoryPage from "./src/Container/VanillaStoryPage/VanillaStoryPage.jsx";
 const darkTheme = createTheme({
     palette: {
         mode: 'dark',
