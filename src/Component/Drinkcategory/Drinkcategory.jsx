@@ -23,11 +23,11 @@ const DrinkCategory = () => {
     }, [id]);
 
     if (loading) {
-        return <p className="text-center mt-10">Loading...</p>;
+        return <p>Loading...</p>;
     }
 
     if (!category || !category.items) {
-        return <p className="text-center mt-10">No data</p>;
+        return <p>No data</p>;
     }
 
     return (

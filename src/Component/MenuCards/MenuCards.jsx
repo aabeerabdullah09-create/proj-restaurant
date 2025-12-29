@@ -4,9 +4,7 @@ const MenuCards = () => {
     const [menu, setMenu] = useState([]);
     const fetchMenu = async () => {
         try {
-            const res = await fetch(
-                "https://mocki.io/v1/714c052a-e2fd-4fdb-9e63-2e413a3611c2"
-            );
+            const res = await fetch("https://mocki.io/v1/714c052a-e2fd-4fdb-9e63-2e413a3611c2");
             const data = await res.json();
             setMenu(data.menus);
         } catch (err) {

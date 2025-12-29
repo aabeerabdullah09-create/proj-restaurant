@@ -1,19 +1,20 @@
-import {useState} from "react";
-import {IconButton} from "@mui/material";
+import { useState } from "react";
+import { IconButton } from "@mui/material";
 import MailIcon from '@mui/icons-material/Mail';
+
 const Email = () => {
     const [openEmail, setOpenEmail] = useState(false);
     if (openEmail) {
         window.open('mailto:info@vanilla.ps', '_blank');
-        setOpenEmail(false);}
+        setOpenEmail(false);
+    }
     return (
-        <IconButton onClick={() => setOpenEmail(true)} sx={{ color: "white" }}>
-            <MailIcon style={{ fontSize: "16px" }}/>
-            <div style={{ color: "#e0e0e0", fontSize: "13px" }}>
-                Email
-            </div>
+        <IconButton onClick={() => setOpenEmail(true)}
+            className="flex items-center gap-1">
+            <MailIcon className="text-white text-[2px]" />
+            <span className="text-white text-[13px]">Email</span>
         </IconButton>
-
     );
 };
+
 export default Email;
